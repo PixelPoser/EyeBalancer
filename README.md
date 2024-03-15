@@ -83,6 +83,8 @@ The primary goal is to ensure the application functions correctly. Specifically,
 3. XMP files must be generated when processing RAW files. 
 4. XMP embeding must happen to the original JPEG files as well as the cropped JPEG output.
 5. to make the XMPs work, we must have the cropping data be correctly be transferred to the XMP file, ensure the cropping data is correctly translated from the Mediapipe to the XMPs.
+
+
 **File Explanation**
 
 *main.js:*
