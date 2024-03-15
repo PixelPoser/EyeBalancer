@@ -65,16 +65,16 @@ The primary goal is to ensure the application functions correctly. Specifically,
 **Context and Requirements**
 
 1. The application currently launches but fails when attempting to process a selected folder of images.
-2. The application is built using Electron.js to facilitate cross-platform compatibility for Windows and Mac. More details can be found here: [Electron.js Documentation]([url](https://www.electronjs.org/docs/latest/)). [Github Link](https://github.com/electron/electron)
-3. For facial recognition features, we are utilizing the [MediaPipe FaceMesh]([url](https://github.com/google/mediapipe/wiki/MediaPipe-Face-Mesh)) library. Details are available here: MediaPipe FaceMesh.
-4. The generation of XMP files is intended to enable users to preview and edit cropping data within Adobe Photoshop or Bridge seamlessly. For more information on Adobe XMP, refer to: [Adobe XMP Documentation]([url](https://github.com/adobe/XMP-Toolkit-SDK/blob/main/docs/DynamicMediaXMPPartnerGuide.pdf))
+2. The application is built using Electron.js to facilitate cross-platform compatibility for Windows and Mac. More details can be found here: [Electron.js Documentation](https://www.electronjs.org/docs/latest/). [Github Link](https://github.com/electron/electron)
+3. For facial recognition features, we are utilizing the [MediaPipe FaceMesh](https://github.com/google/mediapipe/wiki/MediaPipe-Face-Mesh) library. Details are available here: MediaPipe FaceMesh.
+4. The generation of XMP files is intended to enable users to preview and edit cropping data within Adobe Photoshop or Bridge seamlessly. For more information on Adobe XMP, refer to: [Adobe XMP Documentation](https://github.com/adobe/XMP-Toolkit-SDK/blob/main/docs/DynamicMediaXMPPartnerGuide.pdf)
 5. I feel 99% of the framework is written, because I cheated using AI. But not bad for someone who doesn't know how to read.
 
 **Super Mega Critical**
 1. Critical: For folders containing exclusively RAW files, the application should *ONLY* generate Adobe XMP files without creating JPEG outputs. These XMP files should be saved in the same source folder.
 
 **Identified Issues:**
-1. There is an issue with recognizing the CV2 library, likely due to the absence of a compatible version of the module in the Python directory. For reference and possible solutions, visit: [OpenCV-Python]([url](https://pypi.org/project/opencv-python/)).
+1. There is an issue with recognizing the CV2 library, likely due to the absence of a compatible version of the module in the Python directory. For reference and possible solutions, visit: [OpenCV-Python](https://pypi.org/project/opencv-python/).
 2. We need to make sure all files communicate correctly with each other.
 
 **File Explanation**
