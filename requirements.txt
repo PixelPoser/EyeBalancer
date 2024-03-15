@@ -1,0 +1,8 @@
+# Python dependencies for image processing
+pillow==9.5.0
+opencv-python==4.7.0.72
+mediapipe==0.9.1.1
+
+# Electron dependencies (managed by npm)
+electron>=13.6.9
+electron-squirrel-startup>=1.0.0
