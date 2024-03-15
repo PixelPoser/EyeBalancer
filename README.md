@@ -45,20 +45,28 @@ This software is provided "as is" without warranty of any kind, express or impli
 
 ## **Javi Notes** 🇪🇸
 
-Goal: I want the app to work. Select your folder of images and have it export XMP files with cropping data, or embed the XMP in original non-raw files as well as output cropped versions in a new folder inside the source folder.
+**Objective**
+The primary goal is to ensure the application functions correctly. Specifically, the app should:
 
-Context:
-1. App isn't fucking working. It runs but gives an error when I try to process a folder of images.
-2. App is using Electron.js so I can export it for Windows and Mac.  Its like a universal thing. You probably know about it. https://www.electronjs.org/docs/latest/
-3. Facial Recognition software is Mediapipe FaceMesh: https://github.com/google/mediapipe/wiki/MediaPipe-Face-Mesh
-4. XMP files are so you can open a folder of images in Adobe Photoshop or Bridge, and it will show previews of the crop, but you can edit it after the fact.
-5. The Adobe XMP information is here: https://github.com/adobe/XMP-Toolkit-SDK/blob/main/docs/DynamicMediaXMPPartnerGuide.pdf
-6. I feel 99% of the framework is written, because I cheated using AI. But not bad for someone who doesn't know how to read.
-7. CRITICAL: IF FOLDER HAS RAW FILES ONLY: Ensure the app outputs Adobe XMPs when processing RAW files. No JPEG outputs then. Just the XMP generation in the same source folder
-8. CRITICAL: IF FOLDER HAS NON-RAW FILES (JPGS etc): Ensure app embeds XMP data in the original source non raw files JPEGS, JPGs, and PNGs, as WELL as output new cropped versions in a new folder created called "Processed" thats inside source folder.
+1. Allow users to select a folder containing image files.
+2. Process RAW image files (CR3, ARW, NEF) within the selected folder by exporting XMP files with cropping data into the same source folder.
+3. Process non-RAW image files (JPEG, PNG, HEIC) by embedding XMP data directly into the original files and additionally exporting cropped versions of these images into a new folder named "Processed" within the source folder.
 
-Known Problems:
-1. CV2 isn't being recognized, which I suspect is because the Python folder doesn't contain a compatible module version of it. https://pypi.org/project/opencv-python/
-2. I am not good enough to know if all the app files are perfectly communicating with each other.
+**Context and Requirements**
 
+1. The application currently launches but fails when attempting to process a selected folder of images.
+2. The application is built using Electron.js to facilitate cross-platform compatibility for Windows and Mac. More details can be found here: [Electron.js Documentation]([url](https://www.electronjs.org/docs/latest/)). [Github Link](https://github.com/electron/electron)
+3. For facial recognition features, we are utilizing the [MediaPipe FaceMesh]([url](https://github.com/google/mediapipe/wiki/MediaPipe-Face-Mesh)) library. Details are available here: MediaPipe FaceMesh.
+4. The generation of XMP files is intended to enable users to preview and edit cropping data within Adobe Photoshop or Bridge seamlessly. For more information on Adobe XMP, refer to: [Adobe XMP Documentation]([url](https://github.com/adobe/XMP-Toolkit-SDK/blob/main/docs/DynamicMediaXMPPartnerGuide.pdf))
+5. I feel 99% of the framework is written, because I cheated using AI. But not bad for someone who doesn't know how to read.
 
+**Super Mega Critical**
+1. Critical: For folders containing exclusively RAW files, the application should *ONLY* generate Adobe XMP files without creating JPEG outputs. These XMP files should be saved in the same source folder.
+
+**Identified Issues:**
+1. There is an issue with recognizing the CV2 library, likely due to the absence of a compatible version of the module in the Python directory. For reference and possible solutions, visit: [OpenCV-Python]([url](https://pypi.org/project/opencv-python/)).
+2. We need to make sure all files communicate correctly with each other.
+
+I will give you my login for Claude 3 Opus for you over text so it can read the documenaton and you can ask relevant questions. 
+
+Bonus: [Embarassing Connor Hawkins Picture](https://tinyurl.com/kwya9m7h)https://tinyurl.com/kwya9m7h
