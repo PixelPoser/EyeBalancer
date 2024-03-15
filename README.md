@@ -69,6 +69,61 @@ The primary goal is to ensure the application functions correctly. Specifically,
 1. There is an issue with recognizing the CV2 library, likely due to the absence of a compatible version of the module in the Python directory. For reference and possible solutions, visit: [OpenCV-Python]([url](https://pypi.org/project/opencv-python/)).
 2. We need to make sure all files communicate correctly with each other.
 
+**File Explanation**
+
+*main.js:*
+
+This is the main script for the Electron app. It handles the following tasks:
+
+Creating and managing the main application window.
+Loading the HTML file for the user interface.
+Setting up communication channels between the main process and the renderer process (UI).
+Handling events from the UI, such as selecting a folder and initiating image processing.
+Executing the Python script for image processing based on user-selected options.
+Displaying progress updates and notifications during processing.
+index.html:
+
+This file contains the HTML code for the user interface of the EyeBalancer app. It defines the layout, elements, and styling of the UI.
+
+*renderer.js:*
+
+This script runs in the renderer process (UI) and handles interactions within the user interface. It is responsible for:
+
+Responding to user actions like clicking buttons and dragging/dropping folders.
+Sending messages to the main process through the established communication channels.
+Receiving messages from the main process, such as the selected folder path, processing progress updates, and completion/error notifications.
+Updating the UI elements based on the received messages.
+package.json:
+
+This file contains metadata about the project, including its name, version, dependencies, and scripts. It also includes configuration options for Electron Forge, which is used to build and package the app.
+
+*forge.config.js:*
+
+This file provides specific configuration options for Electron Forge. It defines the packaging and building settings for the app, including whether to use ASAR (a file format for packaging Electron apps), the target platforms, and any additional resources to be included in the package.
+
+*scripts/eyebalancerelectron_fullcrop.py:*
+
+This Python script performs the actual image processing for the "Full Crop" option. It uses MediaPipe Face Mesh to detect facial landmarks, calculates the rotation angle to align pupils horizontally, rotates the image, and then crops it to its original aspect ratio.
+
+*scripts/eyebalancerelectron_squarecrop.py:*
+
+This script is similar to eyebalancerelectron_fullcrop.py but crops the image to a square format after aligning the pupils.
+
+*scripts/eyebalancerelectron_balanceeyes.py:*
+
+This script focuses solely on aligning the pupils horizontally without performing any cropping.
+
+*XMPGenerator.h/.cpp:*
+
+These files define a class called XMPGenerator that is responsible for generating and managing XMP metadata related to image alignment. This metadata can be embedded within JPEG files or saved as separate XMP sidecar files for RAW images.
+
+*requirements.txt:*
+
+This file lists the required Python packages and their versions for the image processing scripts to function.
+
+
+---
+
 I will give you my login for Claude 3 Opus for you over text so it can read the documenaton and you can ask relevant questions. 
 
 Bonus: [Embarassing Connor Hawkins Picture](https://tinyurl.com/kwya9m7h)
