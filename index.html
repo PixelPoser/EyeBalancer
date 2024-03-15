@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>EyeBalancer</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Helvetica', sans-serif;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+    
+    button {
+      font-size: 20px;
+      margin: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    
+    #drop-zone {
+      border: 2px dashed white;
+      padding: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 18px;
+    }
+    
+    #crop-options {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    
+    #crop-options button {
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>EyeBalancer</h1>
+  
+  <div id="drop-zone">
+    Drag and drop a folder here
+  </div>
+  
+  <button id="select-folder">Select Folder</button>
+  
+  <div id="crop-options">
+    <button id="full-crop">Full Crop</button>
+    <button id="square-crop">Square Crop</button>
+    <button id="balance-eyes">Balance Eyes</button>
+  </div>
+  
+  <div id="progress-container" style="display: none;">
+    <progress id="progress-bar" max="100" value="0"></progress>
+    <span id="progress-text">Processing...</span>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
