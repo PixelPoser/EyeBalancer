@@ -1,5 +1,8 @@
 # **EyeBalancer** 🌟
 
+![DALL·E 2024-03-15 05 26 59 - Design a clean, professional logo for 'EyeBalancer' that embodies a serious tone  The logo should be fairly simple and minimalistic, incorporating a r](https://github.com/PixelPoser/EyeBalancer/assets/132660500/4cc717fb-1439-4972-b5bb-c22eea793523)
+
+
 <img width="786" alt="Screenshot 2024-03-15 at 5 19 17 AM" src="https://github.com/PixelPoser/EyeBalancer/assets/132660500/97237e08-5e33-4885-825c-59a8350b7bfc">
 
 _EyeBalancer_ is an **Electron app** designed to **automatically align pupils** and **crop photographs** according to 3 different traditional cropping standards, aiming for a more aesthetically pleasing and balanced look. Leveraging **MediaPipe Face Mesh** for facial landmark detection, it identifies the positions of the eyes and rotates the image to achieve horizontal pupil alignment.
