@@ -89,7 +89,8 @@ Setting up communication channels between the main process and the renderer proc
 Handling events from the UI, such as selecting a folder and initiating image processing.
 Executing the Python script for image processing based on user-selected options.
 Displaying progress updates and notifications during processing.
-index.html:
+
+*index.html:*
 
 This file contains the HTML code for the user interface of the EyeBalancer app. It defines the layout, elements, and styling of the UI.
 
@@ -101,7 +102,8 @@ Responding to user actions like clicking buttons and dragging/dropping folders.
 Sending messages to the main process through the established communication channels.
 Receiving messages from the main process, such as the selected folder path, processing progress updates, and completion/error notifications.
 Updating the UI elements based on the received messages.
-package.json:
+
+*package.json:*
 
 This file contains metadata about the project, including its name, version, dependencies, and scripts. It also includes configuration options for Electron Forge, which is used to build and package the app.
 
