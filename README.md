@@ -1,4 +1,4 @@
-**EyeBalancer**
+***EyeBalancer***
 
 EyeBalancer is an Electron app designed to automatically align pupils and crop according to 3 different traditional cropping standards in photographs for a more aesthetically pleasing and balanced look. It utilizes facial landmark detection powered by MediaPipe Face Mesh to identify the positions of the eyes and then rotates the image to achieve horizontal pupil alignment.
 
