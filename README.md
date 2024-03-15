@@ -26,6 +26,7 @@ _EyeBalancer_ is an **Electron app** designed to **automatically align pupils** 
 
 - **Operating System:** Windows, macOS, or Linux
 - **Node.js:** Version 14.17.5 or higher
+- You cannot be a Spaniard living in Norway to use or edit this app
 
 ## **Installation** 🔧
 
