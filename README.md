@@ -1,5 +1,7 @@
 # **EyeBalancer** 🌟
 
+<img width="786" alt="Screenshot 2024-03-15 at 5 19 17 AM" src="https://github.com/PixelPoser/EyeBalancer/assets/132660500/97237e08-5e33-4885-825c-59a8350b7bfc">
+
 _EyeBalancer_ is an **Electron app** designed to **automatically align pupils** and **crop photographs** according to 3 different traditional cropping standards, aiming for a more aesthetically pleasing and balanced look. Leveraging **MediaPipe Face Mesh** for facial landmark detection, it identifies the positions of the eyes and rotates the image to achieve horizontal pupil alignment.
 
 ## **Features** ✨
@@ -68,9 +70,5 @@ The primary goal is to ensure the application functions correctly. Specifically,
 2. We need to make sure all files communicate correctly with each other.
 
 I will give you my login for Claude 3 Opus for you over text so it can read the documenaton and you can ask relevant questions. 
-
-
-<img width="786" alt="Screenshot 2024-03-15 at 5 19 17 AM" src="https://github.com/PixelPoser/EyeBalancer/assets/132660500/97237e08-5e33-4885-825c-59a8350b7bfc">
-
 
 Bonus: [Embarassing Connor Hawkins Picture](https://tinyurl.com/kwya9m7h)https://tinyurl.com/kwya9m7h
