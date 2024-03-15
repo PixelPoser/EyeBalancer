@@ -69,4 +69,8 @@ The primary goal is to ensure the application functions correctly. Specifically,
 
 I will give you my login for Claude 3 Opus for you over text so it can read the documenaton and you can ask relevant questions. 
 
+
+<img width="786" alt="Screenshot 2024-03-15 at 5 19 17 AM" src="https://github.com/PixelPoser/EyeBalancer/assets/132660500/97237e08-5e33-4885-825c-59a8350b7bfc">
+
+
 Bonus: [Embarassing Connor Hawkins Picture](https://tinyurl.com/kwya9m7h)https://tinyurl.com/kwya9m7h
