@@ -1,13 +1,16 @@
 **EyeBalancer**
 
-EyeBalancer is an Electron app designed to automatically align pupils in photographs for a more aesthetically pleasing and balanced look. It utilizes facial landmark detection powered by MediaPipe Face Mesh to identify the positions of the eyes and then rotates the image to achieve horizontal pupil alignment.
+EyeBalancer is an Electron app designed to automatically align pupils and crop according to 3 different traditional cropping standards in photographs for a more aesthetically pleasing and balanced look. It utilizes facial landmark detection powered by MediaPipe Face Mesh to identify the positions of the eyes and then rotates the image to achieve horizontal pupil alignment.
 
 **Features**
 
 Automatic pupil alignment: EyeBalancer analyzes images and automatically rotates them to align the pupils horizontally.
 Support for various image formats: The app supports common image formats like JPEG, PNG, CR3, ARW, and NEF.
+
 Multiple crop options: Users can choose between full crop, square crop, and balance eyes options to achieve the desired output.
+
 Non-destructive editing: The original images are preserved, and the processed images are saved in a separate "Outputs" folder.
+
 XMP metadata generation (optional): For RAW images, EyeBalancer can generate XMP sidecar files containing the alignment data, which can be used by other image editing software.
 
 **Usage**
