@@ -73,11 +73,11 @@ The primary goal is to ensure the application functions correctly. Specifically,
 **Super Mega Critical**
 1. Critical: For folders containing exclusively RAW files, the application should *ONLY* generate Adobe XMP files without creating JPEG outputs. These XMP files should be saved in the same source folder.
 
-**Identified Issues:**
+## **Identified Issues:**
 1. There is an issue with recognizing the CV2 library, likely due to the absence of a compatible version of the module in the Python directory. For reference and possible solutions, visit: [OpenCV-Python](https://pypi.org/project/opencv-python/).
 2. We need to make sure all files communicate correctly with each other.
 
-**What I need you to do*
+## **What I need you to do*
 1. Ensure the app runs
 2. To do so, make sure upon pressing one of the crop buttons after folder selection, it correctly activates the corresponding eyebalancerelectron python script and outputs the image files.
 3. XMP files must be generated when processing RAW files. 
